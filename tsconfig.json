@@ -20,7 +20,8 @@
       "~/hooks/*": ["./src/common/hooks/*"],
       "~/models/*": ["./src/common/models/*"],
       "~/services/*": ["./src/common/services/*"],
-      "~/styles/*": ["./src/common/styles/*"]
+      "~/styles/*": ["./src/common/styles/*"],
+      "~/svg/*": ["./src/common/components/svg/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
