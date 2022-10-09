@@ -1,7 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { DataTestimonialsType } from '~/models/.';
+
 import HttpStatusCode from '~/enum/http-status';
+import { DataTestimonialsType } from '~/models/.';
 
 export default function handler(
   req: NextApiRequest,
@@ -13,6 +14,8 @@ export default function handler(
       items: [
         {
           id: 1,
+          type: 'primary',
+          imageUrl: '/images/image-daniel.jpg',
           name: 'Daniel Clifford',
           occupation: 'Verified Graduate',
           title:
@@ -22,6 +25,8 @@ export default function handler(
         },
         {
           id: 2,
+          type: 'grey',
+          imageUrl: '/images/image-jonathan.jpg',
           name: 'Jonathan Walters',
           occupation: 'Verified Graduate',
           title: 'The team was very supportive and kept me motivated',
@@ -30,6 +35,8 @@ export default function handler(
         },
         {
           id: 3,
+          type: 'white',
+          imageUrl: '/images/image-jeanette.jpg',
           name: 'Jeanette Harmon',
           occupation: 'Verified Graduate',
           title: 'An overall wonderful and rewarding experience',
@@ -38,6 +45,8 @@ export default function handler(
         },
         {
           id: 4,
+          type: 'dark',
+          imageUrl: '/images/image-patrick.jpg',
           name: 'Patrick Abrams',
           occupation: 'Verified Graduate',
           title:
@@ -47,6 +56,8 @@ export default function handler(
         },
         {
           id: 5,
+          type: 'white',
+          imageUrl: '/images/image-kira.jpg',
           name: 'Kira Whittle',
           occupation: 'Verified Graduate',
           title: 'Such a life-changing experience. Highly recommended!',

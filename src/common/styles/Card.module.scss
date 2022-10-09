@@ -1,0 +1,66 @@
+.card {
+  @apply flex flex-col gap-4 w-fit px-8 py-8 rounded-lg
+   bg-primary-moderateViolet shadow-[10px_10px_40px_-23px_rgba(0,0,0,0.75)];
+
+  &.primary {
+    @apply bg-primary-moderateViolet;
+  }
+
+  &.grey {
+    @apply bg-primary-veryDarkGrayBlue;
+  }
+
+  &.dark {
+    @apply bg-primary-verDarkBlackBlue;
+  }
+
+  &.white {
+    @apply bg-white;
+
+    .header {
+      .text {
+        .name {
+          @apply text-primary-veryDarkGrayBlue;
+        }
+        .occupation {
+          @apply text-primary-veryDarkGrayBlue/50;
+        }
+      }
+    }
+    .quote {
+      @apply text-primary-verDarkBlackBlue;
+    }
+
+    .testimonial {
+      @apply text-primary-verDarkBlackBlue;
+    }
+  }
+
+  .header {
+    @apply flex items-center gap-5;
+
+    .image {
+      @apply flex border-2 border-neutral-lightGray/50 rounded-full overflow-hidden;
+    }
+
+    .text {
+      @apply flex flex-col;
+
+      .name {
+        @apply text-white text-base;
+      }
+
+      .occupation {
+        @apply text-white/50  text-sm;
+      }
+    }
+  }
+
+  .quote {
+    @apply flex text-white text-2xl font-semibold;
+  }
+
+  .testimonial {
+    @apply text-white opacity-70 font-medium;
+  }
+}

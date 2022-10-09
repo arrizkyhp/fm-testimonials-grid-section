@@ -3,6 +3,8 @@ export type DataTestimonialsType = {
     totalItem: number;
     items: Array<{
       id: number;
+      type: string;
+      imageUrl: string;
       name: string;
       occupation: string;
       title: string;
