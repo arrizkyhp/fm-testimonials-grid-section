@@ -18,7 +18,7 @@ const Card = (props: any) => {
       <div className={styles.header}>
         <div className={styles.image}>
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}${data.imageUrl}`}
+            src={data.imageUrl}
             alt="user profile"
             width="40px"
             height="40px"
