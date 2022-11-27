@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 
 import { CardType } from '~/enum/.';
 import styles from '~/styles/Card.module.scss';
@@ -33,7 +32,7 @@ const Card = (props: any) => {
       <p className={styles.quote}>{data.title}</p>
       <p className={styles.testimonial}>{data.testimonial}</p>
       {type === CardType.PRIMARY ? (
-        <div className="absolute right-28 top-0">
+        <div className={styles.quotePattern}>
           <PatternQuotation />
         </div>
       ) : (

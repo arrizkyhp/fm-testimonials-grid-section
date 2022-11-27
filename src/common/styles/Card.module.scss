@@ -18,6 +18,10 @@
     @apply col-start-1 row-start-5 row-span-2 xl:col-start-4 xl:row-start-1;
   }
 
+  &.loader {
+    @apply bg-white;
+  }
+
   &.primary {
     @apply bg-primary-moderateViolet;
   }
@@ -78,5 +82,9 @@
 
   .testimonial {
     @apply text-white opacity-70 font-medium z-10 overflow-auto scrollbar-hide;
+  }
+
+  .quotePattern {
+    @apply absolute right-28 top-0;
   }
 }
