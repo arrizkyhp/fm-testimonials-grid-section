@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className="flex">
+        <div className={styles.gridContainer}>
           {data?.items?.map((item: any) => (
             <Card key={item.id} data={item} type={item?.type} />
           ))}

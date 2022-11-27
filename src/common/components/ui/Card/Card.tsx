@@ -3,6 +3,7 @@ import React from 'react';
 
 import { CardType } from '~/enum/.';
 import styles from '~/styles/Card.module.scss';
+import { PatternQuotation } from '~/svg/PatternQuotation';
 
 const Card = (props: any) => {
   const { type, data } = props;
@@ -31,6 +32,13 @@ const Card = (props: any) => {
       </div>
       <p className={styles.quote}>{data.title}</p>
       <p className={styles.testimonial}>{data.testimonial}</p>
+      {type === CardType.PRIMARY ? (
+        <div className="absolute right-28 top-0">
+          <PatternQuotation />
+        </div>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

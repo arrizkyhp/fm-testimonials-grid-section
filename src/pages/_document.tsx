@@ -11,7 +11,7 @@ function MyDocument() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="bg-neutral-lightGrayBlue">
         <Main />
         <NextScript />
       </body>

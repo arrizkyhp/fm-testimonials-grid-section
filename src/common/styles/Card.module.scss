@@ -1,6 +1,22 @@
 .card {
-  @apply flex flex-col gap-4 w-fit px-8 py-8 rounded-lg
+  @apply relative flex flex-col w-full gap-4 px-8 py-8 rounded-lg overflow-hidden
    bg-primary-moderateViolet shadow-[10px_10px_40px_-23px_rgba(0,0,0,0.75)];
+
+  &:first-child {
+    @apply col-span-1 xl:col-span-2;
+  }
+
+  &:nth-child(3) {
+    @apply row-start-4 xl:row-start-2;
+  }
+
+  &:nth-child(4) {
+    @apply col-span-1 xl:col-span-2;
+  }
+
+  &:last-child {
+    @apply col-start-1 row-start-5 row-span-2 xl:col-start-4 xl:row-start-1;
+  }
 
   &.primary {
     @apply bg-primary-moderateViolet;
@@ -37,7 +53,7 @@
   }
 
   .header {
-    @apply flex items-center gap-5;
+    @apply flex items-center gap-5 z-10;
 
     .image {
       @apply flex border-2 border-neutral-lightGray/50 rounded-full overflow-hidden;
@@ -57,10 +73,10 @@
   }
 
   .quote {
-    @apply flex text-white text-2xl font-semibold;
+    @apply flex text-white text-2xl font-semibold z-10;
   }
 
   .testimonial {
-    @apply text-white opacity-70 font-medium;
+    @apply text-white opacity-70 font-medium z-10 overflow-auto scrollbar-hide;
   }
 }

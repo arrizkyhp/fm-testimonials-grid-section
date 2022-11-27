@@ -5,6 +5,9 @@ module.exports = {
     './src/common/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      xl: '1300px',
+    },
     extend: {
       fontFamily: {
         barlow: ['Barlow Semi Condensed', 'sans-serif'],
@@ -22,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

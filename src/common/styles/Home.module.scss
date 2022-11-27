@@ -1,0 +1,7 @@
+.container {
+  @apply h-full flex justify-center items-center my-10 xl:my-0;
+
+  .gridContainer {
+    @apply grid grid-cols-1 gap-8 max-w-[90%] xl:max-w-[80%] xl:h-[90vh] xl:grid-cols-4;
+  }
+}
