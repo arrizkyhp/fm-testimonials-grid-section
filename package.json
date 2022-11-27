@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "eslint --fix ./src/**/*.{js,jsx,ts,tsx,yml,yaml}",
+    "export": "next export",
+    "prepare": "husky install",
+    "format": "prettier --write ./src/**/*",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -38,6 +42,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "typescript": "4.8.3"
   },
   "lint-staged": {

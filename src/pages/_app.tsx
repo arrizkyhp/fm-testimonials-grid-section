@@ -3,11 +3,14 @@ import '~/styles/globals.scss';
 import type { AppProps } from 'next/app';
 
 import { queryClient } from 'src/common/config/query-client';
+import { AppLayout } from '~/layout/.';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
-      <Component {...pageProps} />
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
     </QueryClientProvider>
   );
 }

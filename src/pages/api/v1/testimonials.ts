@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import HttpStatusCode from '~/enum/http-status';
-import { DataTestimonialsType } from '~/models/.';
+import { HttpStatusCode } from '~/enum/http-status';
+import { DataTestimonialsType } from '~/models/types';
 
 export default function handler(
   req: NextApiRequest,

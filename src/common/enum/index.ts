@@ -1,3 +1,4 @@
-import HttpStatusCode from "./http-status";
+import { CardType } from './card-types';
+import { HttpStatusCode } from './http-status';
 
-export { HttpStatusCode };
+export { CardType, HttpStatusCode };

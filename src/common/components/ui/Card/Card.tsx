@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
 
+import { CardType } from '~/enum/.';
 import styles from '~/styles/Card.module.scss';
 
 const Card = (props: any) => {
   const { type, data } = props;
   const styleCard = [styles.card];
 
-  if (type === 'primary') styleCard.push(styles.primary);
-  if (type === 'grey') styleCard.push(styles.grey);
-  if (type === 'dark') styleCard.push(styles.dark);
-  if (type === 'white') styleCard.push(styles.white);
+  if (type === CardType.PRIMARY) styleCard.push(styles.primary);
+  if (type === CardType.GREY) styleCard.push(styles.grey);
+  if (type === CardType.DARK) styleCard.push(styles.dark);
+  if (type === CardType.WHITE) styleCard.push(styles.white);
 
   return (
     <div className={styleCard.join(' ')}>

@@ -1,3 +1,3 @@
-import { DataTestimonialsType } from './DataTestimonialsType';
+import { ChildProps, DataTestimonialsType } from './types';
 
-export type { DataTestimonialsType };
+export type { ChildProps, DataTestimonialsType };

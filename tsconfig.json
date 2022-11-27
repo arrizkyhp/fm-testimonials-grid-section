@@ -18,6 +18,7 @@
     "paths": {
       "~/enum/*": ["./src/common/enum/*"],
       "~/hooks/*": ["./src/common/hooks/*"],
+      "~/layout/*": ["./src/common/components/layout/*"],
       "~/ui/*": ["./src/common/components/ui/*"],
       "~/models/*": ["./src/common/models/*"],
       "~/services/*": ["./src/common/services/*"],
