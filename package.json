@@ -1,4 +1,5 @@
 {
+  "homepage": "https://arrizkyhp.github.io/fm-testimonials-grid-section/",
   "name": "fm-testimonials-grid-section",
   "version": "0.1.0",
   "private": true,
@@ -11,12 +12,15 @@
     "export": "next export",
     "prepare": "husky install",
     "format": "prettier --write ./src/**/*",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.10.3",
     "autoprefixer": "^10.4.12",
     "axios": "^1.1.2",
+    "gh-pages": "^4.0.0",
     "next": "12.3.1",
     "postcss": "^8.4.16",
     "react": "18.2.0",
