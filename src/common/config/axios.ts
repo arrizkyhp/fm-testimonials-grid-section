@@ -1,5 +1,6 @@
-import axios from "axios";
-import { TIMEOUT_REQUEST } from "../constants";
+import axios from 'axios';
+
+import { TIMEOUT_REQUEST } from '../constants';
 
 const frontendMentorAxios = axios.create({
   baseURL: process.env.URL_API,

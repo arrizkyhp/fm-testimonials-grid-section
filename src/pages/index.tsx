@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import { useTestimonials } from '~/hooks/testimonials';
+import { useTestimonials } from '~/hooks/.';
 import styles from '~/styles/Home.module.scss';
 import { Card } from '~/ui/Card';
 import { Footer } from '~/ui/Footer';

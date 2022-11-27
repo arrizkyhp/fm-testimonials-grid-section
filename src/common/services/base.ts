@@ -1,4 +1,4 @@
-import frontendMentorAxios from "../config/axios";
+import frontendMentorAxios from '../config/axios';
 
 export async function getRequest(URL: any) {
   return frontendMentorAxios

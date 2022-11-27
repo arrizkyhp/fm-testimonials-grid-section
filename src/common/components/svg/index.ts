@@ -1,3 +1,3 @@
-import { PaternQuotation } from './PaternQuotation';
+import { PatternQuotation } from './PatternQuotation';
 
-export { PaternQuotation };
+export { PatternQuotation };
