@@ -21,7 +21,6 @@ const nextConfig = {
     URL_API: process.env.NEXT_PUBLIC_BASE_PATH,
   },
   output: 'standalone',
-  distDir: 'build',
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   async headers() {
