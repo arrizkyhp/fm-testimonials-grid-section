@@ -18,7 +18,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    URL_API: process.env.API,
+    URL_API: process.env.NEXT_PUBLIC_BASE_PATH,
   },
   output: 'standalone',
   distDir: 'build',

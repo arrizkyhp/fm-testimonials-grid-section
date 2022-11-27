@@ -2,7 +2,7 @@ import frontendMentorAxios from '../config/axios';
 
 export async function getRequest(URL: any) {
   return frontendMentorAxios
-    .get(`${process.env.URL_API}/${URL}`)
+    .get(`/api/v1/${URL}`)
     .then((response: any) => {
       return response;
     })
